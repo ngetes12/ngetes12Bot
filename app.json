@@ -1,0 +1,53 @@
+{
+  "name": "Bot Yo ndak tau",
+  "description": "[Bot Yo ndak tau] Thank you for using this script, don't forget to subscribe to my channel Dreams FF",
+  "logo": "https://a.uguu.se/GrttsiUy.jpg",
+  "keywords": ["termux-whatsapp-bot",
+    "whatsapp-bot",
+    "whatsapp",
+    "js-whatsapp"],
+  "repository": "https://github.com/KurrXd",
+  "website": "http://bit.ly/Grupgabutbotv1",
+  "env": {
+    "kurrxd09": {
+      "description": "Get the API key here https://api.xteam.xyz",
+      "required": true
+    },
+    "CpGSLymOQy9KfTKgQZr9eDSYqqR": {
+      "description": "Get the API key here https://api.zeks.xyz",
+      "required": true
+    },
+    "Bot Yo ndak tau": {
+      "description": "Enter Your Bot Name",
+      "required": false
+    },
+    "6288801273873": {
+      "description": "your whatsapp number",
+      "required": true
+    },
+    "62852200402748": {
+      "description": "your whatsapp bot number",
+      "required": false
+    }
+},
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ],
+   "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
